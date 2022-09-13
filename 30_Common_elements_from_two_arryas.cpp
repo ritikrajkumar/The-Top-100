@@ -1,32 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 int main()
 {
-    int arr1[] = {12, 48, 78, 96, 87, 36};
-    int arr2[] = {78, 63, 96, 25};
-    int size1 = sizeof(arr1) / sizeof(arr1[0]);
+	int arr1[] = {88, 2, 38, 4, 5, 65, 75, 10};
+	int arr2[] = {4, 5, 95, 11, 6, 10};
+	int size1 = sizeof(arr1) / sizeof(arr1[0]);
     int size2 = sizeof(arr2) / sizeof(arr2[0]);
-    cout << "The first array is: ";
-    for (int i = 0; i < size1; i++)
-    {
-        cout << arr1[i] << " ";
-    }
-    cout << "\nThe second array is: ";
-    for (int i = 0; i < size2; i++)
-    {
-        cout << arr2[i] << " ";
-    }
-    cout << "\nThe common elements from the both arrays are: ";
-    for (int i = 0; i < size1; i++)
-    {
-        for (int j = 0; i < size2; j++)
-        {
-            if (arr1[i] == arr2[j])
-            {
-                cout << arr1[i] << " ";
-            }
-        }
-    }
-    return 0;
+	int i, j, flag, k = 0;
+	int result[100];
+	printf("The common elements are: ");
+	for (i = 0; i < size1; i++)
+	{
+
+		for (j = 0; j < size2; j++)
+		{
+
+			if (arr1[i] == arr2[j])
+			{
+
+				result[k] = arr1[i];
+				cout << result[k] << " ";
+				k++;
+			}
+		}
+	}
 }

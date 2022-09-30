@@ -15,7 +15,7 @@ int fibo(int n)
 
 int main()
 {
-    int num, result;
+    int num;
     cout << "Enter the number: ";
     cin >> num;
     cout << "The desired series is: ";

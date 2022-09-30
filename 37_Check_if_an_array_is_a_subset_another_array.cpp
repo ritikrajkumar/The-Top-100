@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+using namespace std;
 
 bool isSubset(int arr1[], int arr2[], int m, int n)
 {
@@ -26,10 +27,9 @@ int main()
     int n = sizeof(arr2) / sizeof(arr2[0]);
 
     if (isSubset(arr1, arr2, m, n))
-        printf("arr2[] is subset of arr1[].");
+        cout << "arr2[] is subset of arr1[].";
     else
-        printf("arr2[] is not a subset of arr1[].");
+        cout << "arr2[] is not a subset of arr1[].";
 
-    getchar();
     return 0;
 }
